@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Factorial</h1><br><br>
+
+ 
+<p id="demo"></p>
+
+<script>
+var factorial = (n) =>
+            {
+                let fact = 1;
+                if(n==0)
+                {
+                    return fact ;
+                }
+                else if(n==1)
+                {
+                    return fact;
+                }
+                else
+                {
+                    for(let i=3;i<=n;i++)
+                    {
+                        fact=fact*i;
+                    }
+                    return fact;
+                }
+                
+            }
+        document.getElementById("demo").innerHTML = factorial(5);
+</script>
+
+</body>
+</html>
